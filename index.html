@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b25">
+  <title>Cricket Six Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="game">
+    <header class="top">
+      <div class="brand">🏏 CRICKET SIX</div>
+      <div class="tag">CHALLENGE</div>
+    </header>
+
+    <section class="scoreboard">
+      <div>
+        <small>YOUR SCORE</small>
+        <h1 id="score">0</h1>
+      </div>
+      <div>
+        <small>BALLS</small>
+        <h2 id="balls">0 / 12</h2>
+      </div>
+      <div>
+        <small>BEST</small>
+        <h2 id="best">0</h2>
+      </div>
+    </section>
+
+    <div class="stadium">
+      <canvas id="gameCanvas"></canvas>
+
+      <div class="message" id="message">
+        <div class="big">🏏</div>
+        <h2>READY TO PLAY?</h2>
+        <p>Hit the ball at the perfect time!</p>
+        <button id="startBtn">START GAME</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="hitBtn" class="hit" disabled>
+        ⚡ TAP TO HIT
+      </button>
+      <p>Tap when the ball reaches your bat!</p>
+    </div>
+
+    <footer>
+      <span>CRICKET SIX CHALLENGE</span>
+      <span>MADE FOR CRICKET FANS 🏆</span>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
